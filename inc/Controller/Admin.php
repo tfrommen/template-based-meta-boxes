@@ -17,7 +17,9 @@ class Admin {
 	private $file;
 
 	/**
-	 * Constructor. Init properties.
+	 * Constructor. Set up properties.
+	 *
+	 * @see tf\TemplateBasedMetaBoxes\Plugin::init()
 	 *
 	 * @param string $file Main plugin file
 	 */
@@ -27,9 +29,9 @@ class Admin {
 	}
 
 	/**
-	 * Initialize the class.
+	 * Wire admin-specific functions up.
 	 *
-	 * @see tf\TemplateBasedMetaBoxes\Plugin::admin_init()
+	 * @see tf\TemplateBasedMetaBoxes\Plugin::init()
 	 *
 	 * @return void
 	 */

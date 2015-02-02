@@ -15,7 +15,7 @@ class Script {
 	private $file;
 
 	/**
-	 * Constructor. Init properties.
+	 * Constructor. Set up properties.
 	 *
 	 * @param string $file Main plugin file
 	 */
@@ -56,12 +56,13 @@ class Script {
 			TRUE
 		);
 
+		$meta_boxes = $settings_model->get_meta_boxes( $settings );
 		wp_localize_script(
 			$handle,
 			'templateBasedMetaBoxesData',
 			array(
 				'settings'  => $settings,
-				'metaBoxes' => $settings_model->get_meta_boxes( $settings ),
+				'metaBoxes' => $meta_boxes,
 			)
 		);
 

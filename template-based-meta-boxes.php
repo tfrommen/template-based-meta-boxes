@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Template-based Meta Boxes
  * Plugin URI:  https://github.com/tfrommen/template-based-meta-boxes
- * Description: This plugin allows to show or hide specific page meta boxes according to the current page template.
+ * Description: Show or hide specific page meta boxes according to the currently selected page template.
  * Author:      Thorsten Frommen
  * Author URI:  http://ipm-frommen.de
  * Version:     1.0

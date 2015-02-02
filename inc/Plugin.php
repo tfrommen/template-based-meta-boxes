@@ -17,6 +17,8 @@ class Plugin {
 	/**
 	 * Constructor. Init properties.
 	 *
+	 * @see init()
+	 *
 	 * @param string $file Main plugin file
 	 */
 	public function __construct( $file ) {
@@ -40,9 +42,9 @@ class Plugin {
 	}
 
 	/**
-	 * Check if the plugin has to be initialized for back-end.
+	 * Check for admin context.
 	 *
-	 * @see init()
+	 * @see Plugin::init()
 	 *
 	 * @return bool
 	 */
