@@ -1,11 +1,11 @@
 <?php # -*- coding: utf-8 -*-
 
-namespace tf\TemplateBasedMetaBoxes\Model;
+namespace tf\TemplateBasedMetaBoxes\Models;
 
 /**
  * Class Settings
  *
- * @package tf\TemplateBasedMetaBoxes\Model
+ * @package tf\TemplateBasedMetaBoxes\Models
  */
 class Settings {
 
@@ -15,10 +15,7 @@ class Settings {
 	private $settings;
 
 	/**
-	 * Get meta box settings.
-	 *
-	 * @see get_meta_boxes()
-	 * @see tf\TemplateBasedMetaBoxes\View\Script::render()
+	 * Return the meta box settings.
 	 *
 	 * @return array
 	 */
@@ -29,9 +26,9 @@ class Settings {
 		}
 
 		/**
-		 * Filter meta box settings.
+		 * Filter the meta box settings.
 		 *
-		 * @param array $settings Meta box settings
+		 * @param array $settings Meta box settings.
 		 */
 		$settings = apply_filters( 'template_based_meta_boxes', array() );
 		if ( ! is_array( $settings ) ) {
@@ -73,11 +70,9 @@ class Settings {
 	}
 
 	/**
-	 * Get template based meta boxes.
+	 * Get the template based meta boxes.
 	 *
-	 * @see tf\TemplateBasedMetaBoxes\View\Script::render()
-	 *
-	 * @param array $settings Meta box settings (Optional)
+	 * @param array $settings Optional. Meta box settings. Defaults to NULL.
 	 *
 	 * @return array
 	 */

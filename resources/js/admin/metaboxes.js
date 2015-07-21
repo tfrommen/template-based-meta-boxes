@@ -1,5 +1,3 @@
-var Plugin = Plugin || {};
-
 /* global jQuery, tfTemplateBasedMetaBoxesData */
 ;( function( Plugin, $, pluginData ) {
 	"use strict";

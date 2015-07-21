@@ -15,9 +15,7 @@ class Plugin {
 	private $file;
 
 	/**
-	 * Constructor. Init properties.
-	 *
-	 * @see init()
+	 * Constructor. Set up the properties.
 	 *
 	 * @param string $file Main plugin file
 	 */
@@ -27,43 +25,19 @@ class Plugin {
 	}
 
 	/**
-	 * Init controllers.
-	 *
-	 * @see init()
+	 * Initialize the plugin.
 	 *
 	 * @return void
 	 */
-	public function init() {
+	public function initialize() {
 
-		if ( $this->is_admin() ) {
-			$admin_controller = new Controller\Admin( $this->file );
-			$admin_controller->init();
+		if ( is_admin() ) {
+			$settings = new Models\Settings();
+
+			$script = new Models\Script( $this->file, $settings );
+			$script_controller = new Controllers\Script( $script );
+			$script_controller->initialize();
 		}
-	}
-
-	/**
-	 * Check for admin context.
-	 *
-	 * @see Plugin::init()
-	 *
-	 * @return bool
-	 */
-	private function is_admin() {
-
-		global $pagenow;
-
-		if ( ! $pagenow ) {
-			return FALSE;
-		}
-
-		$page_base = basename( $pagenow, '.php' );
-
-		$pages = array(
-			'post',
-			'post-new',
-		);
-
-		return in_array( $page_base, $pages );
 	}
 
 }

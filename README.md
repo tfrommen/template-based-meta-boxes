@@ -98,3 +98,7 @@ Yes, I do have a fancy user interface in mind already. One of these days, when I
 ## Contribution
 
 If you have a feature request, or if you have developed the feature already, please feel free to use the Issues and/or Pull Requests section.
+
+## Changelog
+
+[Changelog](CHANGELOG.md)
