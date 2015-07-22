@@ -2,7 +2,7 @@
 	"name": "template-based-meta-boxes",
 	"description": "Show or hide specific page meta boxes according to the currently selected page template.",
 	"author": "Thorsten Frommen",
-	"version": "1.12.0",
+	"version": "1.1.0",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/tfrommen/template-based-meta-boxes"
