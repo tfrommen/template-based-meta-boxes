@@ -32,6 +32,9 @@ class Plugin {
 	public function initialize() {
 
 		if ( is_admin() ) {
+			$text_domain = new Models\TextDomain( $this->file );
+			$text_domain->load();
+
 			$settings = new Models\Settings();
 
 			$script = new Models\Script( $this->file, $settings );

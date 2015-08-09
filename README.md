@@ -99,6 +99,8 @@ Yes, I do have a fancy user interface in mind already. One of these days, when I
 
 If you have a feature request, or if you have developed the feature already, please feel free to use the Issues and/or Pull Requests section.
 
+Of course, you can also provide me with translations if you would like to use the plugin in another not yet included language.
+
 ## Changelog
 
 [Changelog](CHANGELOG.md)

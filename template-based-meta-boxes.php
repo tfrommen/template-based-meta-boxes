@@ -5,7 +5,9 @@
  * Description: Show or hide specific page meta boxes according to the currently selected page template.
  * Author:      Thorsten Frommen
  * Author URI:  http://ipm-frommen.de/wordpress
- * Version:     1.1
+ * Version:     1.1.1
+ * Text Domain: template-based-meta-boxes
+ * Domain Path: /languages
  * License:     GPLv3
  */
 
